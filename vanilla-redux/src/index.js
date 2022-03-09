@@ -36,7 +36,7 @@ const onSubmit = (e) => {
   e.preventDefault();
   const toDo = input.value;
   input.value = "";
-  store.dispatch({ type: ADD_TODO, text: toDo });
+  addTodo(toDo);
 };
 const painttodos = () => {
   const toDos = store.getState();
